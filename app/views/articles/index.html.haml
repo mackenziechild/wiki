@@ -4,6 +4,3 @@
 		Published at
 		= article.created_at.strftime('%b %d, %Y')
 	%p= truncate(article.content, length: 200)
-
-- if user_signed_in?
-	= link_to "New Article", new_article_path
